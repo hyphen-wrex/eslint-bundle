@@ -39,6 +39,10 @@ Create file `.eslintrc.json` and paste the following configuration (my version) 
     "global-require": "warn",
     "import/no-dynamic-require": "warn",
     "react/prop-types": "warn"
+  },
+  "env": {
+    "node": true,
+    "browser": true,
   }
 }
 ```
