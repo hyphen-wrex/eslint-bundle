@@ -19,31 +19,6 @@ Install package:
 npm i eslint-bundle -D
 ```
 
-Create file `.eslintrc.json` and paste the following configuration (my version) there:
+Create file `.eslintrc.js` in root and copy the contents of `./eslint-bundle/.eslintrc.js` there:
 
-```json
-{
-  "extends": "airbnb",
-  "plugins": [
-    "import"
-  ],
-  "rules": {
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline"
-      }
-    ],
-    "react/jsx-wrap-multilines": "off",
-    "global-require": "warn",
-    "import/no-dynamic-require": "warn",
-    "react/prop-types": "warn"
-  },
-  "env": {
-    "node": true,
-    "browser": true,
-  }
-}
-```
 Modify the config however you want.
