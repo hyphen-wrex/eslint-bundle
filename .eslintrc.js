@@ -1,18 +1,20 @@
 const path = require('path');
 
 module.exports = {
-  extends: 'airbnb',
+  extends: ['airbnb', "plugin:prettier/recommended"],
   plugins: [
     'import',
+    'prettier',
   ],
   settings: {
-    'import/resolver': {
-      webpack: {
-        config: path.join(__dirname, 'webpack.development.config.js')
-      }
-    },
+    // 'import/resolver': {
+    //   webpack: {
+    //     config: path.join(__dirname, 'webpack.development.config.js')
+    //   }
+    // },
   },
   rules: {
+  "prettier/prettier": "error",
     'comma-dangle': [
       'error',
       {

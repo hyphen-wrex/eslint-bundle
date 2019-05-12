@@ -1,3 +1,4 @@
-// var tulind = require('tulind');
+const tulind = require("tulind");
+
 console.log("Tulip Indicators version is:");
 console.log(tulind.version);
